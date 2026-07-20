@@ -1,0 +1,118 @@
+baseURL: "https://www.discombobulator.fr/"
+theme: "terminal"
+
+defaultContentLanguage: "fr"
+defaultContentLanguageInSubdir: false
+
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: ""
+
+minify:
+  disableXML: true
+
+markup:
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+
+params:
+  env: production
+  author: "Laurent"
+  contentTypeName: "posts"
+  showMenuItems: 4
+  showLanguageSelector: true
+  fullWidthTheme: false
+  centerTheme: false
+  autoCover: true
+  readingTime: true
+  Toc: true
+
+languages:
+  fr:
+    label: "Français"
+    locale: "fr-fr"
+    weight: 1
+    title: "Le blog de Laurent"
+    params:
+      subtitle: "RF, SDR, domotique, electronique et bidouilles diverses."
+      keywords: "Blog, RF, SDR, Domotique, Electronique"
+      TocTitle: "Table des matières"
+      menuMore: "Voir plus"
+      readMore: "Lire la suite"
+      readOtherPosts: "Voir d'autres articles"
+      newerPosts: "Articles plus récents"
+      olderPosts: "Articles plus anciens"
+      missingContentMessage: "Page introuvable..."
+      missingBackButtonLabel: "Retour à l'accueil"
+      minuteReadingTime: "min de lecture"
+      words: "mots"
+      logo:
+        logoText: "Laurent"
+        logoHomeLink: "/"
+    menu:
+      main:
+        - identifier: posts
+          name: Articles
+          url: /posts/
+          weight: 10
+        - identifier: scripts
+          name: Scripts
+          url: /scripts/
+          weight: 15
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 20
+        - identifier: about
+          name: A propos
+          url: /about/
+          weight: 30
+
+  en:
+    label: "English"
+    locale: "en-us"
+    weight: 2
+    title: "Laurent's Blog"
+    params:
+      subtitle: "RF, SDR, home automation, electronics and various tinkering."
+      keywords: "Blog, RF, SDR, Home Automation, Electronics"
+      TocTitle: "Table of Contents"
+      menuMore: "Show more"
+      readMore: "Read more"
+      readOtherPosts: "Read other posts"
+      newerPosts: "Newer posts"
+      olderPosts: "Older posts"
+      missingContentMessage: "Page not found..."
+      missingBackButtonLabel: "Back to home page"
+      minuteReadingTime: "min read"
+      words: "words"
+      logo:
+        logoText: "Laurent"
+        logoHomeLink: "/"
+    menu:
+      main:
+        - identifier: posts
+          name: Posts
+          url: /en/posts/
+          weight: 10
+        - identifier: scripts
+          name: Scripts
+          url: /en/scripts/
+          weight: 15
+        - identifier: tags
+          name: Tags
+          url: /en/tags/
+          weight: 20
+        - identifier: about
+          name: About
+          url: /en/about/
+          weight: 30

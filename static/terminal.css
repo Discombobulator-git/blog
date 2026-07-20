@@ -1,0 +1,10 @@
+/* Surcharge de la palette de couleur du theme "terminal" : "green".
+   Charge apres le bundle css/*.css (voir layouts/partials/head.html du
+   theme), donc gagne le conflit sur :root avec main.css qui definit les
+   couleurs par defaut. Valeurs du preset "Matrix" de
+   https://panr.github.io/terminal-css/ (fond noir, texte et accent vert). */
+:root {
+  --background: #000000;
+  --foreground: #4eee85;
+  --accent: #4eee85;
+}
