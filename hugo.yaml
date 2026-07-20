@@ -39,7 +39,9 @@ params:
 languages:
   fr:
     label: "Français"
+    languageName: "Français"
     locale: "fr-fr"
+    languageCode: "fr-fr"
     weight: 1
     title: "Discombobulator"
     params:
@@ -79,7 +81,9 @@ languages:
 
   en:
     label: "English"
+    languageName: "English"
     locale: "en-us"
+    languageCode: "en-us"
     weight: 2
     title: "Discombobulator"
     params:
