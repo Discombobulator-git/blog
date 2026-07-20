@@ -1,6 +1,6 @@
-# Blog de Laurent
+# Discombobulator
 
-Site Hugo, theme PaperMod, bilingue francais/anglais (francais par defaut,
+Site Hugo, theme Terminal, bilingue francais/anglais (francais par defaut,
 anglais sous /en/).
 
 ## Demarrage local
@@ -35,16 +35,8 @@ Lien de telechargement dans le markdown : `[Télécharger](mon_script.py)`
 (chemin relatif au bundle). La page d'index content/scripts/_index.md
 liste automatiquement tous les projets.
 
-## Deploiement (Cloudflare Pages)
+## Deploiement (Cloudflare Workers)
 
-1. Pousser ce repo sur GitHub.
-2. Sur Cloudflare Pages : "Create a project" > connecter le repo GitHub.
-3. Build command : hugo --minify
-   Build output directory : public
-   Variable d'environnement : HUGO_VERSION = 0.147.9
-4. Ajouter le domaine personnalise dans l'onglet "Custom domains" du projet Pages.
-
-## A adapter avant publication
-
-- hugo.yaml : baseURL (mettre le vrai nom de domaine), socialIcons (mettre le vrai lien GitHub)
-- content/about.md : la bio
+Projet Cloudflare Workers connecte au repo GitHub (wrangler.jsonc a la
+racine, assets servis depuis public/). Un push sur main declenche un
+build (hugo --minify) et un deploiement automatique.

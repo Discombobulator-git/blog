@@ -41,7 +41,7 @@ languages:
     label: "Français"
     locale: "fr-fr"
     weight: 1
-    title: "Le blog de Laurent"
+    title: "Discombobulator"
     params:
       subtitle: "RF, SDR, domotique, electronique et bidouilles diverses."
       keywords: "Blog, RF, SDR, Domotique, Electronique"
@@ -56,7 +56,7 @@ languages:
       minuteReadingTime: "min de lecture"
       words: "mots"
       logo:
-        logoText: "Laurent"
+        logoText: "Discombobulator"
         logoHomeLink: "/"
     menu:
       main:
@@ -81,7 +81,7 @@ languages:
     label: "English"
     locale: "en-us"
     weight: 2
-    title: "Laurent's Blog"
+    title: "Discombobulator"
     params:
       subtitle: "RF, SDR, home automation, electronics and various tinkering."
       keywords: "Blog, RF, SDR, Home Automation, Electronics"
@@ -96,7 +96,7 @@ languages:
       minuteReadingTime: "min read"
       words: "words"
       logo:
-        logoText: "Laurent"
+        logoText: "Discombobulator"
         logoHomeLink: "/"
     menu:
       main:
